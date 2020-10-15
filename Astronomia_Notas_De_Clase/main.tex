@@ -1,0 +1,484 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Legrand Orange Book
+% LaTeX Template
+% Version 2.4 (26/09/2018)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Compiling this template:
+% This template uses biber for its bibliography and makeindex for its index.
+% When you first open the template, compile it from the command line with the 
+% commands below to make sure your LaTeX distribution is configured correctly:
+%
+% 1) pdflatex main
+% 2) makeindex main.idx -s StyleInd.ist
+% 3) biber main
+% 4) pdflatex main x 2
+%
+% After this, when you wish to update the bibliography/index use the appropriate
+% command above and make sure to compile with pdflatex several times 
+% afterwards to propagate your changes to the document.
+%
+% This template also uses a number of packages which may need to be
+% updated to the newest versions for the template to compile. It is strongly
+% recommended you update your LaTeX distribution if you have any
+% compilation errors.
+%
+% Important note:
+% Chapter heading images should have a 2:1 width:height ratio,
+% e.g. 920px width and 460px height.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+%\hypersetup{pdftitle={Title},pdfauthor={Author}} % Uncomment and fill out to include PDF metadata for the author and title of the book
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty} % Suppress headers and footers on the title page
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{Pictures/background.pdf}};
+\draw (current page.center) node [fill=blue!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Introducción a la astronomía\\[15pt] % Book title
+{\Large Notas de clase}\\[20pt] % Subtitle
+{\huge Rudik Roberto Rompich}}}; % Author name
+\end{tikzpicture}
+\vfill
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+~\vfill
+\thispagestyle{empty}
+
+\noindent Copyright \copyright\ 2020 Rudik Rompich\\ % Copyright notice
+
+\noindent \textsc{Published by Rudiks}\\ % Publisher
+
+\noindent \textsc{rudiks.com}\\ % URL
+
+\noindent Licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License (the ``License''). You may not use this file except in compliance with the License. You may obtain a copy of the License at \url{http://creativecommons.org/licenses/by-nc/3.0}. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \textsc{``as is'' basis, without warranties or conditions of any kind}, either express or implied. See the License for the specific language governing permissions and limitations under the License.\\ % License information, replace this with your own license (if any)
+
+\noindent \textit{First printing, October 2020} % Printing/edition date
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
+
+\chapterimage{Pictures/0002} % Table of contents heading image
+
+\pagestyle{empty} % Disable headers and footers for the following pages
+
+\tableofcontents % Print the table of contents itself
+
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right side of the book
+
+\pagestyle{fancy} % Enable headers and footers again
+
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+
+\part{Elementales}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1
+%----------------------------------------------------------------------------------------
+
+\chapterimage{Pictures/0001} % Chapter heading image
+
+\chapter{Elementales}
+
+\section{Repaso}\index{Repaso}
+
+\subsection{El Sistema Solar}
+
+\subsubsection{El sol}
+\begin{enumerate}
+    \item El sol tiene 99,85 de la masa, 0.135 planetas, comentas,satélites..., 0.015 el resto...
+    \item El sol es una estrella tipo G2, hidrógeno, helio y metales.
+    \item El sol más brillante que el 83 por ciento de las estrellas en la galaxia. (Enanas rojas las más amplias). 
+\end{enumerate}
+
+\subsection{Los planetas}
+    \begin{itemize}
+        \item Orbitan el sol. 
+        \item Masivos para ser esféricos; pero no lo suficiente para iniciar fusión nuclear. 
+        \item No hay planetesimales.
+        \item Planetas rocosos y gaseosos. 
+        
+    \end{itemize}
+    
+\begin{remark}
+Tidal locking; la misma cara a un objeto que orbita
+\end{remark}
+\subsubsection{La Tierra}
+\begin{itemize}
+    \item La luna hace que la rotación de la tierra sea menor 
+    \item Causa la inclinación de la tierra de 23.5 
+\end{itemize}
+
+\subsubsection{Otros planetas}
+\begin{itemize}
+    \item Júpiter: 4 sistemas de anillos, más tenues que los de Saturno. 
+    \item Saturno: Menor densidad a la del agua. 
+    \item Urano: eje de rotación paralelo al plano de la elíptica. 
+    \item Neptuno: llueve diamantes
+    
+    
+\end{itemize}
+
+\subsection{La zona habitable}
+\begin{itemize}
+    \item Región en donde la existencia de agua. 
+    \item Presión atmosférica 
+    \item Campo magnético 
+    
+\end{itemize}
+
+\subsection{Cinturón de asteroides}
+
+\begin{itemize}
+    \item Región entre Marte y Júpiter
+    \item Cuerpos sólidos e irregulares. 
+    \item Ceres (esférico), Vesta, Pallas, Hygie
+\end{itemize}
+
+\subsection{Cinturón de Kuiper}
+\begin{itemize}
+    \item Orbita de Neptuno hasta 55 AU 
+    \item Asteroides y planetas enanos. 
+    \item 20 ancho y 200 masivo comparado al cinturón de asteroides. 
+    \item A los objetos se les llama transneptunianos. 
+    \item Neptuno tiene un gran efecto 
+\end{itemize}
+
+\subsection{Planetas enanos}
+\begin{itemize}
+    \item No han limpiado su órbita de planetesimales.
+\end{itemize}
+
+\subsection{Cometas}
+\begin{itemize}
+    \item Cuerpo de hizo que emana gases cuando se caliente
+    \item Outgassing 
+\end{itemize}
+
+\subsection{Material interplanetario}
+\begin{itemize}
+    \item Polvo 
+    \item Piedra y hielo
+    \item Meteoroide (<100) 
+    \item Asteroide (>100) 
+    \item Comentas
+\end{itemize}
+
+\subsection{Mete...}
+\begin{itemize}
+    \item Meteoroide (lalala) 
+    \item Meteoro (entrando a orbita)
+    \item Meteorito (estrellado) 
+
+\end{itemize}
+
+\subsection{Heliosfera}
+\begin{itemize}
+    \item Región influenciada por el viento solar y el campo magnético. 
+    \item Protege de rayos cósmicos 
+\end{itemize}
+
+\subsection{Nube de Oort}
+\begin{itemize}
+    \item Después de la heliosfera, entre 2000 AU a 200,000 AU 
+    \item Planetesimales de hielo 
+    \item Límite del SS y esfera de Hill 
+    
+\end{itemize}
+
+\subsection{Esfera de Hill}
+\begin{itemize}
+    \item Región en donde existe la atracción gravitatoria. 
+\end{itemize}
+
+\section{Propiedades del SS}
+\begin{itemize}
+    \item Planetas aislados
+    \item Órbitas casi circulares
+    \item Mismo plano 
+    \item Diferenciado interior y exterior
+    \item Asteroides viejos 
+    \item Venus orbita en el sentido contrario 
+    \item Rocosos: pequeños y densos. Grandes: gaseosos y enormes. 
+    \item Todos los gaseosos tiene anillos. 
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1
+%----------------------------------------------------------------------------------------
+
+\chapterimage{Pictures/0002} % Chapter heading image
+
+\chapter{Formación del sistema solar}
+
+\section{Formación del sistema solar}
+\subsection{Teoría nebular}
+\begin{itemize}
+    \item Nube que se contrae
+    \item Rota rápido, por el momento angular
+    \item Fuerza centrípeta se opone a la contracción 
+    \item Disco 
+    \item \textbf{NO explica interno y externo}
+    \item planetas no se forman en la nube
+\end{itemize}
+
+\subsection{Teoría de la condensación}
+\begin{itemize}
+    \item Teoría nebular pero con polvo interestelar 
+    \item Polvo microscópico expulsado por supernovas.
+    \item Partículas de hielo y roca 
+\end{itemize}
+
+\subsection{Polvo interestelar}
+\begin{itemize}
+    \item Polvo enfría materia
+    \item Reduce la presión externa 
+    \item Actúa como condensación, los átomos se adhieren a él.
+    \item Acretan y acretan -> Planetesimales -> Protoplaneta -> Acreción
+    \item \textbf{Fragmentación} Se escapó como asteroide o cometa.
+\end{itemize}
+
+\subsection{Diferenciación del SS}
+\begin{itemize}
+    \item Composición de un planeta depende de su posición. 
+    \item Centro: partículas en moléculas y el polvo desapareció.
+    \item Exteriores: el polvo se mantuvo igual. 
+    \item El polvo se enfrío en todos lados menos en su centro. 
+\end{itemize}
+
+\begin{remark}
+Planetas exteriores más representativos del universo.
+\end{remark}
+
+\begin{notation}
+Teoría de condensación - acreción explica los planetas terrestres, pero no los gigantes. 
+\end{notation}
+
+\subsection{Teoría Núcleo-Acreción}
+\begin{itemize}
+    \item Rocosos: Sí hay acreción hasta llegar a protoplanetas. 
+    \item SS exterior: menos temperatura, más materiales. Campo gravitatorio era grande para acretar grandes cantidades de gas. 
+    \item Densas atmósferas. 
+    \item \textbf{No hubo suficiente tiempo}
+\end{itemize}
+
+\subsection{Teoría de inestabilidad gravitacional}
+\begin{itemize}
+    \item Nebulosa no era uniforme, habían grumos. 
+    \item Grumos colapsaron bajo su propia gravedad. 
+    \item 4 grandes protoplanetas, acretaron gas y polvo rápidamente por su gran gravedad. 
+\end{itemize}
+
+\begin{remark}
+\textbf{Núcleo-Acreción: } predice masas de \textbf{20M}\\
+\textbf{Inestabilidad-gravitacional} predice masas de \textbf{6M}
+\end{remark}
+
+\begin{notation}
+SS exterior: planetas actuaron como soles y lunas como plenetas\\
+SS interior: planetesimales capturados. 
+\end{notation}
+
+\begin{remark}
+\textbf{Migración de planetas gigantes}
+Los planetas gigantes migraron lejos del sol y luego migraron hacia él.\\
+\textbf{Dos posibilidades: }
+\begin{itemize}
+    \item Nebulosa solar más fría
+    \item Júpiter se formó en el cinturón de Kuiper. 
+\end{itemize}
+
+\end{remark}
+
+\subsection{Otras cosas nice...}
+\begin{itemize}
+    \item SS interior: planetesimales que no fueron capturados o acretados fueron expulsados más allá de la órbita de Marte. 
+    \item Cinturón de asteroides: un planeta que no se formó por el fuerte campo gravitatorio de Júpiter. 
+    \item Cinturón de Kuiper: planetesionales de Urano y Neptuno.  
+    \item La nube de Oort: planetesimales de Urano/Neptuno expulsados hacia Saturno y Júpiter; para finalmente estos mandarlos lejos. 
+    \item El agua de la tierra probablemente llegó de un cometa. 
+\end{itemize}
+
+\begin{figure}[h]
+\centering\includegraphics[scale=0.6]{Pictures/ss_formacion}
+\caption{Formación del sistema solar}
+\label{fig:placeholder} 
+\end{figure}
+
+\chapter{Otras formaciones específicas}
+\section{Luna}
+
+\subsection{La luna como tal...}
+\begin{itemize}
+    \item La luna no tiene un núcleo de Fe grande, masivo y denso como la tierra. 
+    \item Deficiente en metales pesados comparado con la Tierra. 
+    \item Núcleo sólido y no líquido
+    \item Poroso -> Disminuye su densidad promedio. 
+    \item Lado oscuro es más grueso que el lado que ve a la tierra. 
+\end{itemize}
+
+\subsection{Formación de la luna}
+
+\subsubsection{Teoría de la hermana}
+\begin{itemize}
+    \item Luna y Tierra se formaron al mismo tiempo por planetesimales. 
+    \item Sistema binario entre ambos. 
+    \item Evolucionó a lo que es ahora. 
+    \item \textbf{Problema: } Luna y Tierra distinta composición. 
+\end{itemize}
+\subsubsection{Teoría de la captura}
+\begin{itemize}
+    \item La luna se formó al mismo tiempo que la tierra, pero en otra \textbf{región}. 
+    \item Luna pasó cerca de la Tierra y esta la capturó. 
+    \item \textbf{Problema: }Luna es grande y los mantos de la Luna y Tierra son parecidos.
+\end{itemize}
+\subsubsection{Teoría de la hija}
+\begin{itemize}
+    \item Luna se formó de la Tierra misma. 
+    \item Tierra giraba rápido y una parte del Océano Pacífico se desprendió. 
+    \item \textbf{Problema: } No se explica como la Tierra giraba tan rápido y si la luna hubiera sido expulsada, la órbita no habría sido estable. 
+\end{itemize}
+\subsubsection{Teoría de la impacto}
+
+\begin{itemize}
+    \item \textbf{Más favorecida} Captura+Hija
+    \item Un objeto del tamaño de Marte colisionó con la Tierra. 
+    \item El objeto resultado se acretó formando la Luna. 
+    \item Explica que la Tierra y la luna tengan un \textbf{manto} similar. 
+    \item El núcleo de Fe del objeto quedó en la Tierra. 
+    \item \textbf{Únicamente a la Tierra}
+\end{itemize}
+
+\section{La Tierra}
+
+\subsection{La atmósfera}
+\subsubsection{Atmósfera primaria}
+\begin{itemize}
+    \item Hidrógeno -> Helio -> Metano -> Metano -> Amoniaco -> Vapor de agua 
+\end{itemize}
+\subsubsection{Atmósfera secundaria}
+\begin{itemize}
+    \item Expulsada del interior de la Tierra. 
+    \item Actividad volcánica. 
+    \item Radiación del sol: dividió los componente ricos en hidrógeno.
+    \item Temperatura bajó, el vapor de agua se condensó y formó los océanos. 
+    \item El $O_2$ apareció por los organismos biológicos. 
+    \item El $El O_3$ protege de los rayos UV.
+\end{itemize}
+
+\subsection{El cielo}
+\begin{itemize}
+    \item El cielo es azul debido a la dispersión de Rayleigh.
+\end{itemize}
+
+\begin{remark}
+En Marte se comporta distinto la atmósfera
+\begin{itemize}
+    \item Por la dispersión de Mie
+    \item Dispersión de la luz por polvo 
+    \item Rojas se ven beneficiadas. 
+    \item Depende del ángulo de incidencia. 
+\end{itemize}
+\end{remark}
+
+\chapter{Exo-Sistemas Solares}
+\section{Exo-Sistemas Solares}
+Hasta ahora sabemos de la teoría de la condensación: 
+\begin{itemize}
+    \item La teoría de la condensación explica la estructura del SS.
+    \item Flexible. Explica otras situaciones: nuestra Luna, la rotación lenta de Venus y la rotación en el sentido contrario de Venus. 
+\end{itemize}
+
+\subsection{Detección de planetas}
+Indirectas
+\begin{itemize}
+    \item Se observa a la estrella anfitriona
+    \item \textbf{Variaciones de la velocidad radial}
+    \item \textbf{Tránsitos planetarios}
+\end{itemize}
+Directas
+\begin{itemize}
+    \item Luz de la estrella per se. 
+\end{itemize}
+
+\subsubsection{Indirectas}
+\textbf{Velocidad radial}
+\begin{itemize}
+    \item Sistemas binarios (planeta+estrella). 
+    \item Solo se da un límite inferior a la masa del planeta. 
+    \item Es necesaria la inclinación del sistema.
+\end{itemize}
+\begin{remark}
+The radial velocity of an object with respect to a given point is the rate of change of the distance between the object and the point. That is, the radial velocity is the component of the object's velocity that points in the direction of the radius connecting the point and the object. In astronomy, the point is usually taken to be the observer on Earth, so the radial velocity then denotes the speed with which the object moves away from the Earth (or approaches it, for a negative radial velocity).
+\end{remark}
+\textbf{Tránsitos}
+\begin{itemize}
+    \item Tamaño relativo del planeta respecto a la estrella.
+    \item Qué tanto disminuyó la luz. 
+\end{itemize}
+
+\subsubsection{Directas}
+\textbf{Imágenes del planeta}
+\begin{itemize}
+    \item Sustraer la luz de la estrella. 
+    \item Observaciones con mucha resolución angular y mucho constaste.
+    \item Únicamente planetas grandes y brillantes.
+    \item Lejos de su estrella. 
+    \item Se detectan: Temperatura, Radio, Masa y Atmósfera
+\end{itemize}
+
+
+\begin{figure}[h]
+\centering\includegraphics[scale=0.6]{Pictures/exo.png}
+\caption{Formación del sistema solar}
+\label{fig:placeholder} 
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+\cleardoublepage % Make sure the index starts on an odd (right side) page
+\phantomsection
+\setlength{\columnsep}{0.75cm} % Space between the 2 columns of the index
+\addcontentsline{toc}{chapter}{\textcolor{blue}{Index}} % Add an Index heading to the table of contents
+\printindex % Output the index
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
